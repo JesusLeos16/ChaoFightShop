@@ -39,6 +39,7 @@ function Navbar() {
                 }
               }}
               onLoad={(e) => {
+                console.log('Logo cargado correctamente:', e.target.src)
                 e.target.style.display = 'block'
                 const fallback = e.target.parentElement.querySelector('.logo-fallback')
                 if (fallback) {

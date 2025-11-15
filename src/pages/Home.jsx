@@ -40,6 +40,12 @@ function Home() {
                 style={{ display: 'block', maxWidth: '100%' }}
                 onError={(e) => {
                   console.error('Error cargando logo:', e.target.src)
+                  console.error('Intentando ruta alternativa...')
+                  // Intentar ruta alternativa
+                  if (!e.target.src.includes('assets')) {
+                    e.target.src = '/assets/logo/chao-logo.png'
+                    return
+                  }
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {
@@ -50,6 +56,7 @@ function Home() {
                   }
                 }}
                 onLoad={(e) => {
+                  console.log('Logo cargado correctamente:', e.target.src)
                   e.target.style.display = 'block'
                   const fallback = e.target.parentElement.querySelector('.logo-fallback')
                   if (fallback) {
