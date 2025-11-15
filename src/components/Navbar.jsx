@@ -37,10 +37,6 @@ function Navbar() {
                 }
               }}
             />
-            {/* Texto fallback mejorado - visible solo si no hay logo */}
-            <span className="logo-text hidden md:block ml-2 whitespace-nowrap text-white">
-              CHAO FIGHT SHOP
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

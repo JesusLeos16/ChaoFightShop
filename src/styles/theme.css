@@ -2,7 +2,12 @@
 
 /* Primary Button */
 .btn-primary {
-  @apply bg-primary text-white font-display px-6 py-3 rounded-lg tracking-wider hover:bg-primary-700 transition-all shadow-md;
+  @apply bg-primary text-white font-display px-6 py-3 rounded-lg tracking-wider transition-all shadow-md;
+}
+
+.btn-primary:hover {
+  @apply bg-primary-600 transform scale-105;
+  box-shadow: 0 0 20px rgba(225, 6, 0, 0.5);
 }
 
 /* Octagon Button */
@@ -49,5 +54,9 @@ body {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(225, 6, 0, 0.3);
   white-space: nowrap;
   overflow: visible;
+  /* Borde rojo para destacar */
+  -webkit-text-stroke: 2px #e10600;
+  text-stroke: 2px #e10600;
+  paint-order: stroke fill;
 }
 

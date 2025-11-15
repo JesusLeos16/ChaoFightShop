@@ -25,9 +25,6 @@ function Footer() {
                   }
                 }}
               />
-              <span className="logo-text text-lg hidden md:block whitespace-nowrap text-white">
-                CHAO FIGHT SHOP
-              </span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Equipamos a guerreros – Todo el equipo profesional para artes marciales y deportes de contacto.
