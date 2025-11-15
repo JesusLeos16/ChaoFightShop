@@ -37,6 +37,7 @@ function Home() {
                 alt="CHAO FIGHT SHOP" 
                 className="h-24 md:h-32 w-auto object-contain px-4 mb-4"
                 loading="eager"
+                style={{ display: 'block' }}
                 onError={(e) => {
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
@@ -46,9 +47,6 @@ function Home() {
                     fallback.textContent = 'CHAO FIGHT SHOP'
                     parent.appendChild(fallback)
                   }
-                }}
-                onLoad={(e) => {
-                  e.target.style.display = 'block'
                 }}
               />
             </div>
