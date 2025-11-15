@@ -81,11 +81,11 @@ function Home() {
       </section>
 
       {/* Categorías Grid */}
-      <section className="bg-white container mx-auto px-4 py-6 md:py-12 lg:py-16">
-        <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-center text-primary mb-6 md:mb-8 lg:mb-12 uppercase tracking-wider">
+      <section className="bg-white container mx-auto px-4 py-4 md:py-6 lg:py-8">
+        <h2 className="font-display text-xl md:text-2xl lg:text-3xl text-center text-primary mb-4 md:mb-6 lg:mb-8 uppercase tracking-wider">
           Explora nuestras categorías
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
           {categories.map((category, index) => (
             <CategoryCard key={index} category={category} />
           ))}

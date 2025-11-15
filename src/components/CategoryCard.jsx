@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function CategoryCard({ category }) {
   return (
     <Link to={category.path || '/catalogo'} className="block group">
-      <div className="relative clip-octagon bg-dark-50 border-2 border-primary p-4 md:p-6 lg:p-8 aspect-square flex flex-col items-center justify-center hover:bg-primary transition-all duration-300 transform hover:scale-105">
+      <div className="relative clip-octagon bg-dark-50 border-2 border-primary p-3 md:p-4 lg:p-5 aspect-square flex flex-col items-center justify-center hover:bg-primary transition-all duration-300 transform hover:scale-105">
         {category.image && (
           <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
             <img
@@ -17,11 +17,11 @@ function CategoryCard({ category }) {
           </div>
         )}
         {category.icon && (
-          <div className="text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3 lg:mb-4 text-primary group-hover:text-white transition-colors">
+          <div className="text-xl md:text-2xl lg:text-3xl mb-1 md:mb-2 lg:mb-3 text-primary group-hover:text-white transition-colors">
             {category.icon}
           </div>
         )}
-        <h3 className="font-display text-white text-center uppercase tracking-wider text-xs md:text-sm lg:text-base group-hover:text-white transition-colors z-10">
+        <h3 className="font-display text-white text-center uppercase tracking-wider text-[10px] md:text-xs lg:text-sm group-hover:text-white transition-colors z-10 leading-tight">
           {category.name}
         </h3>
       </div>
