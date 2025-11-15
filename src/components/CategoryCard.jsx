@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function CategoryCard({ category }) {
   return (
     <Link to={category.path || '/catalogo'} className="block group">
-      <div className="relative clip-octagon bg-dark-50 border-2 border-primary p-8 aspect-square flex flex-col items-center justify-center hover:bg-primary transition-all duration-300 transform hover:scale-105">
+      <div className="relative clip-octagon bg-white border-2 border-primary p-8 aspect-square flex flex-col items-center justify-center hover:bg-primary transition-all duration-300 transform hover:scale-105">
         {category.image && (
           <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
             <img
@@ -21,7 +21,7 @@ function CategoryCard({ category }) {
             {category.icon}
           </div>
         )}
-        <h3 className="font-display text-white text-center uppercase tracking-wider text-sm md:text-base group-hover:text-white transition-colors z-10">
+        <h3 className="font-display text-primary text-center uppercase tracking-wider text-sm md:text-base group-hover:text-white transition-colors z-10">
           {category.name}
         </h3>
       </div>
