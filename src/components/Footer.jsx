@@ -14,6 +14,7 @@ function Footer() {
                 src="/assets/logo/chao-logo.png" 
                 alt="CHAO FIGHT SHOP" 
                 className="h-12 mr-3 object-contain px-2"
+                loading="lazy"
                 onError={(e) => {
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
@@ -23,6 +24,9 @@ function Footer() {
                     fallback.textContent = 'CHAO FIGHT SHOP'
                     parent.appendChild(fallback)
                   }
+                }}
+                onLoad={(e) => {
+                  e.target.style.display = 'block'
                 }}
               />
             </div>

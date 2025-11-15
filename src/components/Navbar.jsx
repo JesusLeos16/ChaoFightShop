@@ -25,6 +25,7 @@ function Navbar() {
               src="/assets/logo/chao-logo.png" 
               alt="CHAO FIGHT SHOP" 
               className="h-12 md:h-16 w-auto object-contain px-2"
+              loading="eager"
               onError={(e) => {
                 // Fallback con texto mejorado
                 e.target.style.display = 'none'
@@ -35,6 +36,10 @@ function Navbar() {
                   fallback.textContent = 'CHAO FIGHT SHOP'
                   parent.appendChild(fallback)
                 }
+              }}
+              onLoad={(e) => {
+                // Asegurar que la imagen se muestre correctamente
+                e.target.style.display = 'block'
               }}
             />
           </Link>
