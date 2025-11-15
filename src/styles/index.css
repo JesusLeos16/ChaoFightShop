@@ -22,7 +22,12 @@
 
 /* Secondary Button */
 .btn-secondary {
-  @apply bg-dark-100 text-white font-display px-6 py-3 rounded-lg tracking-wider hover:bg-dark-200 transition-all shadow-md;
+  @apply bg-dark-100 text-white font-display px-6 py-3 rounded-lg tracking-wider transition-all shadow-md border-2 border-gray-700;
+}
+
+.btn-secondary:hover {
+  @apply bg-primary text-white border-primary transform scale-105;
+  box-shadow: 0 0 15px rgba(225, 6, 0, 0.4);
 }
 
 /* Base styles */
