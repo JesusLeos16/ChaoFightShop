@@ -68,8 +68,8 @@ function Home() {
       </section>
 
       {/* Categorías Grid */}
-      <section className="container mx-auto px-4 py-16">
-        <h2 className="font-display text-3xl md:text-4xl text-center text-white mb-12 uppercase tracking-wider">
+      <section className="bg-white container mx-auto px-4 py-16">
+        <h2 className="font-display text-3xl md:text-4xl text-center text-primary mb-12 uppercase tracking-wider">
           Explora nuestras categorías
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -88,13 +88,12 @@ function Home() {
           <p className="text-gray-300 mb-8 text-lg">
             Contáctanos por WhatsApp y te ayudamos a encontrar el equipo perfecto para ti.
           </p>
-          <Button
-            variant="primary"
+          <button
             onClick={handleWhatsAppClick}
-            className="text-lg px-8 py-4"
+            className="bg-primary hover:bg-[#25D366] text-white font-display text-lg px-8 py-4 rounded-lg tracking-wider transition-all shadow-md hover:shadow-xl transform hover:scale-105"
           >
             Contactar por WhatsApp
-          </Button>
+          </button>
         </div>
       </section>
     </div>

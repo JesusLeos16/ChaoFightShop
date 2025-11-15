@@ -35,20 +35,11 @@ body {
   @apply font-body bg-dark text-white;
 }
 
-/* Títulos principales - Mejor visibilidad */
+/* Títulos principales - Color blanco */
 h1.font-display,
 h2.font-display,
 h3.font-display {
-  @apply text-primary;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(225, 6, 0, 0.5);
-}
-
-/* Títulos grandes en hero */
-h1.font-display.text-4xl,
-h1.font-display.text-5xl,
-h1.font-display.text-6xl {
-  @apply text-primary;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(225, 6, 0, 0.6);
+  @apply text-white;
 }
 
 /* Scrollbar styling */
