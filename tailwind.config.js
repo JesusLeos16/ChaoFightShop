@@ -42,7 +42,7 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Oswald', 'Impact', 'Arial Black', 'sans-serif'],
+        display: ['Oswald', 'Bebas Neue', 'Impact', 'Arial Black', 'sans-serif'],
         body: ['Roboto', 'Inter', 'sans-serif'],
       },
       borderRadius: {

@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "sku": "CHAO-GL-001",
+      "title": "Guantes de Boxeo Profesionales",
+      "brand": "CHAO",
+      "category": "guantes",
+      "sport": "boxeo",
+      "price": 1299,
+      "description": "Guantes de boxeo profesionales con diseño premium. Ideal para entrenamiento y competencia. Construidos con materiales de alta calidad para máxima durabilidad y protección.",
+      "materials": "Cuero sintético de alta calidad, relleno de espuma EVA, forro interior transpirable",
+      "images": [
+        "/assets/products/guantes-1.jpg",
+        "/assets/products/guantes-2.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "sku": "CHAO-PROT-001",
+      "title": "Protector Bucal Profesional",
+      "brand": "CHAO",
+      "category": "protectores",
+      "sport": "mma",
+      "price": 299,
+      "description": "Protector bucal de alta calidad, moldeable al calor. Proporciona protección superior para dientes y encías durante el combate.",
+      "materials": "Etileno vinil acetato (EVA) de grado médico",
+      "images": [
+        "/assets/products/protector-bucal-1.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "sku": "CHAO-ROPA-001",
+      "title": "Shorts de Combate MMA",
+      "brand": "CHAO",
+      "category": "ropa",
+      "sport": "mma",
+      "price": 599,
+      "description": "Shorts de combate diseñados para máximo rendimiento. Material ligero y resistente, ideal para competencia y entrenamiento.",
+      "materials": "Poliester de alta resistencia, costuras reforzadas",
+      "images": [
+        "/assets/products/shorts-mma-1.jpg"
+      ]
+    }
+  ]
+}
+
