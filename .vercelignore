@@ -1,0 +1,8 @@
+# Archivos que no se deben incluir en el deploy de Vercel
+node_modules
+.git
+.vscode
+.idea
+*.log
+.DS_Store
+
