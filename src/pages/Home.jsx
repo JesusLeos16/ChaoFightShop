@@ -83,7 +83,7 @@ function Home() {
       {/* Categorías Grid */}
       <section className="bg-white container mx-auto px-4 py-4 md:py-6 lg:py-8">
         <h2 className="font-display text-xl md:text-2xl lg:text-3xl text-center text-primary mb-4 md:mb-6 lg:mb-8 uppercase tracking-wider">
-          Explora nuestras categorías
+          Explora Nuestras Categorías
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
           {categories.map((category, index) => (
