@@ -1,0 +1,18 @@
+INSTRUCCIONES PARA AGREGAR EL LOGO
+====================================
+
+1. Coloca tu logo en este directorio con el nombre: chao-logo.png
+
+2. El logo debe ser en formato PNG con fondo transparente (recomendado)
+
+3. Tamaño recomendado:
+   - Ancho: mínimo 200px
+   - Alto: proporcional (se ajustará automáticamente)
+
+4. El logo se usará en:
+   - Navbar (barra de navegación superior) - altura: 48-64px
+   - Footer (pie de página) - altura: 48px
+   - Hero de la página principal - altura: 96-128px
+
+5. Si el logo no se carga, se mostrará un placeholder automáticamente.
+
