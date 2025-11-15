@@ -22,7 +22,7 @@ function Navbar() {
           {/* Logo - Mejorado con padding y tipografía */}
           <Link to="/" className="flex items-center min-w-0 flex-shrink-0">
             <img 
-              src="/assets/logo/chao-logo.png" 
+              src={`${import.meta.env.BASE_URL}assets/logo/chao-logo.png`}
               alt="CHAO FIGHT SHOP" 
               className="h-12 md:h-16 w-auto object-contain px-2"
               loading="eager"

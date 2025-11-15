@@ -33,7 +33,7 @@ function Home() {
           <div className="mb-8 flex justify-center">
             <div className="flex flex-col items-center">
               <img 
-                src="/assets/logo/chao-logo.png" 
+                src={`${import.meta.env.BASE_URL}assets/logo/chao-logo.png`}
                 alt="CHAO FIGHT SHOP" 
                 className="h-24 md:h-32 w-auto object-contain px-4 mb-4"
                 loading="eager"
