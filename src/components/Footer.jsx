@@ -15,7 +15,9 @@ function Footer() {
                 alt="CHAO FIGHT SHOP" 
                 className="h-12 mr-3 object-contain px-2"
                 loading="lazy"
+                style={{ display: 'block', maxWidth: '100%' }}
                 onError={(e) => {
+                  console.error('Error cargando logo:', e.target.src)
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {
@@ -27,6 +29,10 @@ function Footer() {
                 }}
                 onLoad={(e) => {
                   e.target.style.display = 'block'
+                  const fallback = e.target.parentElement.querySelector('.logo-fallback')
+                  if (fallback) {
+                    fallback.remove()
+                  }
                 }}
               />
             </div>
