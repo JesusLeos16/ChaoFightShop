@@ -19,13 +19,13 @@ function Footer() {
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {
                     const fallback = document.createElement('span')
-                    fallback.className = 'logo-fallback logo-text text-lg'
+                    fallback.className = 'logo-fallback logo-text text-lg text-white'
                     fallback.textContent = 'CHAO FIGHT SHOP'
                     parent.appendChild(fallback)
                   }
                 }}
               />
-              <span className="logo-text text-lg hidden md:block whitespace-nowrap">
+              <span className="logo-text text-lg hidden md:block whitespace-nowrap text-white">
                 CHAO FIGHT SHOP
               </span>
             </div>

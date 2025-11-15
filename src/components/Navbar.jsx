@@ -31,14 +31,14 @@ function Navbar() {
                 const parent = e.target.parentElement
                 if (!parent.querySelector('.logo-fallback')) {
                   const fallback = document.createElement('span')
-                  fallback.className = 'logo-fallback logo-text'
+                  fallback.className = 'logo-fallback logo-text text-white'
                   fallback.textContent = 'CHAO FIGHT SHOP'
                   parent.appendChild(fallback)
                 }
               }}
             />
             {/* Texto fallback mejorado - visible solo si no hay logo */}
-            <span className="logo-text hidden md:block ml-2 whitespace-nowrap">
+            <span className="logo-text hidden md:block ml-2 whitespace-nowrap text-white">
               CHAO FIGHT SHOP
             </span>
           </Link>

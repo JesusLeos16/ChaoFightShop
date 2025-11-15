@@ -41,16 +41,12 @@ function Home() {
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {
                     const fallback = document.createElement('span')
-                    fallback.className = 'logo-fallback logo-text text-3xl md:text-5xl'
+                    fallback.className = 'logo-fallback logo-text text-3xl md:text-5xl lg:text-6xl text-white'
                     fallback.textContent = 'CHAO FIGHT SHOP'
                     parent.appendChild(fallback)
                   }
                 }}
               />
-              {/* Texto fallback mejorado */}
-              <span className="logo-text text-3xl md:text-5xl lg:text-6xl block">
-                CHAO FIGHT SHOP
-              </span>
             </div>
           </div>
           <h1 className="font-display text-4xl md:text-6xl text-white mb-6 uppercase tracking-wider">
