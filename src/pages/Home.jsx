@@ -2,9 +2,6 @@ import { Link } from 'react-router-dom'
 import CategoryCard from '../components/CategoryCard'
 import Button from '../components/Button'
 
-// Logo - ruta absoluta desde public/
-const logoImage = '/assets/logo/chao-logo.png'
-
 function Home() {
   // Categorías principales con formato octágono
   const categories = [
@@ -33,39 +30,12 @@ function Home() {
       <section className="relative min-h-[80vh] flex items-center justify-center cage-bg bg-dark bg-opacity-95">
         <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark-50 to-dark"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <div className="mb-8 flex justify-center">
-            <div className="flex flex-col items-center">
-              <img 
-                src={logoImage}
-                alt="CHAO FIGHT SHOP" 
-                className="h-24 md:h-32 w-auto object-contain px-4 mb-4"
-                loading="eager"
-                onLoad={(e) => {
-                  console.log('✅ Logo cargado exitosamente:', e.target.src)
-                  // Asegurar que el fallback no esté visible
-                  const fallback = e.target.parentElement.querySelector('.logo-fallback')
-                  if (fallback) {
-                    fallback.remove()
-                  }
-                }}
-                onError={(e) => {
-                  console.error('❌ Error cargando logo:', e.target.src)
-                  console.error('URL completa:', window.location.origin + e.target.src)
-                  e.target.style.display = 'none'
-                  const parent = e.target.parentElement
-                  if (!parent.querySelector('.logo-fallback')) {
-                    const fallback = document.createElement('span')
-                    fallback.className = 'logo-fallback logo-text text-3xl md:text-5xl lg:text-6xl text-white'
-                    fallback.textContent = 'CHAO FIGHT SHOP'
-                    parent.appendChild(fallback)
-                  }
-                }}
-              />
-            </div>
-          </div>
           <h1 className="font-display text-4xl md:text-6xl text-white mb-6 uppercase tracking-wider">
-            Equipamos a guerreros
+            CHAO FIGHT SHOP
           </h1>
+          <h2 className="font-display text-4xl md:text-6xl text-white mb-6 uppercase tracking-wider">
+            Equipamos a guerreros
+          </h2>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Todo el equipo profesional para artes marciales y deportes de contacto que necesitas para entrenar y competir al máximo nivel.
           </p>
