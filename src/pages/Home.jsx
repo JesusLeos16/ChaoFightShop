@@ -40,8 +40,17 @@ function Home() {
                 alt="CHAO FIGHT SHOP" 
                 className="h-24 md:h-32 w-auto object-contain px-4 mb-4"
                 loading="eager"
+                onLoad={(e) => {
+                  console.log('✅ Logo cargado exitosamente:', e.target.src)
+                  // Asegurar que el fallback no esté visible
+                  const fallback = e.target.parentElement.querySelector('.logo-fallback')
+                  if (fallback) {
+                    fallback.remove()
+                  }
+                }}
                 onError={(e) => {
-                  console.error('Error cargando logo:', e.target.src)
+                  console.error('❌ Error cargando logo:', e.target.src)
+                  console.error('URL completa:', window.location.origin + e.target.src)
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {

@@ -29,8 +29,15 @@ function Navbar() {
               alt="CHAO FIGHT SHOP" 
               className="h-12 md:h-16 w-auto object-contain px-2"
               loading="eager"
+              onLoad={(e) => {
+                console.log('✅ Logo Navbar cargado:', e.target.src)
+                const fallback = e.target.parentElement.querySelector('.logo-fallback')
+                if (fallback) {
+                  fallback.remove()
+                }
+              }}
               onError={(e) => {
-                console.error('Error cargando logo:', e.target.src)
+                console.error('❌ Error logo Navbar:', e.target.src)
                 e.target.style.display = 'none'
                 const parent = e.target.parentElement
                 if (!parent.querySelector('.logo-fallback')) {
