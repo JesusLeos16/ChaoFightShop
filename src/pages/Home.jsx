@@ -33,7 +33,7 @@ function Home() {
           <div className="mb-8 flex justify-center">
             <div className="flex flex-col items-center">
               <img 
-                src={`${import.meta.env.BASE_URL}assets/logo/chao-logo.png`}
+                src="/assets/logo/chao-logo.png"
                 alt="CHAO FIGHT SHOP" 
                 className="h-24 md:h-32 w-auto object-contain px-4 mb-4"
                 loading="eager"
@@ -41,11 +41,6 @@ function Home() {
                 onError={(e) => {
                   console.error('Error cargando logo:', e.target.src)
                   console.error('Intentando ruta alternativa...')
-                  // Intentar ruta alternativa
-                  if (!e.target.src.includes('assets')) {
-                    e.target.src = '/assets/logo/chao-logo.png'
-                    return
-                  }
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
                   if (!parent.querySelector('.logo-fallback')) {

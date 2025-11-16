@@ -11,7 +11,7 @@ function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src={`${import.meta.env.BASE_URL}assets/logo/chao-logo.png`}
+                src="/assets/logo/chao-logo.png"
                 alt="CHAO FIGHT SHOP" 
                 className="h-12 mr-3 object-contain px-2"
                 loading="lazy"
