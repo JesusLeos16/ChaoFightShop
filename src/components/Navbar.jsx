@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logoImage from '/assets/logo/chao-logo.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -22,7 +23,7 @@ function Navbar() {
           {/* Logo - Mejorado con padding y tipografía */}
           <Link to="/" className="flex items-center min-w-0 flex-shrink-0">
             <img 
-              src="/assets/logo/chao-logo.png"
+              src={logoImage}
               alt="CHAO FIGHT SHOP" 
               className="h-12 md:h-16 w-auto object-contain px-2"
               loading="eager"
