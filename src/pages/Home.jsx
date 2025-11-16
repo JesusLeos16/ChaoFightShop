@@ -82,7 +82,7 @@ function Home() {
 
       {/* Categorías Grid */}
       <section className="bg-white container mx-auto px-4 py-4 md:py-6 lg:py-8">
-        <h2 className="font-display text-xl md:text-2xl lg:text-3xl text-center text-primary mb-4 md:mb-6 lg:mb-8 uppercase tracking-wider">
+        <h2 className="font-display text-xl md:text-2xl lg:text-3xl text-center text-primary mb-4 md:mb-6 lg:mb-8 uppercase tracking-wider" style={{ color: '#e10600' }}>
           Explora Nuestras Categorías
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
