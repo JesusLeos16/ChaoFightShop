@@ -22,32 +22,21 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-dark border-b-2 border-primary shadow-cage">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - Mejorado con padding y tipografía */}
-          <Link to="/" className="flex items-center min-w-0 flex-shrink-0">
+          {/* Logo + Texto - Siempre visibles juntos */}
+          <Link to="/" className="flex items-center min-w-0 flex-shrink-0 gap-2 md:gap-3">
             <img 
               src={logoImage}
               alt="CHAO FIGHT SHOP" 
-              className="h-12 md:h-16 w-auto object-contain px-2"
+              className="h-12 md:h-16 w-auto object-contain"
               loading="eager"
-              onLoad={(e) => {
-                console.log('✅ Logo Navbar cargado:', e.target.src)
-                const fallback = e.target.parentElement.querySelector('.logo-fallback')
-                if (fallback) {
-                  fallback.remove()
-                }
-              }}
               onError={(e) => {
                 console.error('❌ Error logo Navbar:', e.target.src)
                 e.target.style.display = 'none'
-                const parent = e.target.parentElement
-                if (!parent.querySelector('.logo-fallback')) {
-                  const fallback = document.createElement('span')
-                  fallback.className = 'logo-fallback logo-text text-white'
-                  fallback.textContent = 'CHAO FIGHT SHOP'
-                  parent.appendChild(fallback)
-                }
               }}
             />
+            <span className="logo-text text-white font-display font-bold uppercase tracking-wider text-sm md:text-base whitespace-nowrap">
+              CHAO FIGHT SHOP
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

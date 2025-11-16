@@ -12,24 +12,20 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo y descripción - Mejorado */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4 gap-3">
               <img 
                 src={logoImage}
                 alt="CHAO FIGHT SHOP" 
-                className="h-12 mr-3 object-contain px-2"
+                className="h-12 w-auto object-contain"
                 loading="lazy"
                 onError={(e) => {
                   console.error('Error cargando logo:', e.target.src)
                   e.target.style.display = 'none'
-                  const parent = e.target.parentElement
-                  if (!parent.querySelector('.logo-fallback')) {
-                    const fallback = document.createElement('span')
-                    fallback.className = 'logo-fallback logo-text text-lg text-white'
-                    fallback.textContent = 'CHAO FIGHT SHOP'
-                    parent.appendChild(fallback)
-                  }
                 }}
               />
+              <span className="logo-text text-white font-display font-bold uppercase tracking-wider text-lg">
+                CHAO FIGHT SHOP
+              </span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Equipamos a guerreros – Todo el equipo profesional para artes marciales y deportes de contacto.
