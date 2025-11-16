@@ -1,0 +1,25 @@
+{
+  "name": "CHAO FIGHT SHOP - Equipamiento Profesional",
+  "short_name": "CHAO FIGHT SHOP",
+  "description": "Equipamiento profesional para artes marciales y deportes de contacto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#e10600",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo/chao-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/logo/chao-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
