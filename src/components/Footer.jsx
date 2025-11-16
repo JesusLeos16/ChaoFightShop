@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import logoImage from '/assets/logo/chao-logo.png'
+
+// Logo - ruta absoluta desde public/
+const logoImage = '/assets/logo/chao-logo.png'
 
 function Footer() {
   const currentYear = new Date().getFullYear()

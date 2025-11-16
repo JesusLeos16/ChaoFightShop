@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logoImage from '/assets/logo/chao-logo.png'
+
+// Logo - ruta absoluta desde public/
+const logoImage = '/assets/logo/chao-logo.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
