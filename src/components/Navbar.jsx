@@ -27,7 +27,6 @@ function Navbar() {
               alt="CHAO FIGHT SHOP" 
               className="h-12 md:h-16 w-auto object-contain px-2"
               loading="eager"
-              style={{ display: 'block', maxWidth: '100%' }}
               onError={(e) => {
                 console.error('Error cargando logo:', e.target.src)
                 e.target.style.display = 'none'
@@ -37,14 +36,6 @@ function Navbar() {
                   fallback.className = 'logo-fallback logo-text text-white'
                   fallback.textContent = 'CHAO FIGHT SHOP'
                   parent.appendChild(fallback)
-                }
-              }}
-              onLoad={(e) => {
-                console.log('Logo cargado correctamente:', e.target.src)
-                e.target.style.display = 'block'
-                const fallback = e.target.parentElement.querySelector('.logo-fallback')
-                if (fallback) {
-                  fallback.remove()
                 }
               }}
             />
