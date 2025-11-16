@@ -42,7 +42,24 @@
       "images": [
         "/assets/products/shorts-mma-1.jpg"
       ]
+    },
+    {
+      "id": 4,
+      "sku": "CHAO-ROPA-002",
+      "title": "Playera chida de chao team",
+      "brand": "CHAO",
+      "category": "ropa",
+      "sport": "casual",
+      "price": 999,
+      "description": "Una playera muy chida de chao team",
+      "materials": "Playera y amor",
+      "images": [
+        "/assets/products/imagen-1.jpg",
+        "/assets/products/imagen-2.jpg"
+      ]   
     }
   ]
+
+  
 }
 

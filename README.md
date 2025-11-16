@@ -122,7 +122,7 @@ El número de WhatsApp está configurado en dos lugares:
   "images": [
     "/assets/products/imagen-1.jpg",
     "/assets/products/imagen-2.jpg"
-  ]
+  ]   
 }
 ```
 
